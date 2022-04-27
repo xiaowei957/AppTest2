@@ -58,7 +58,7 @@ public class LoginActivity extends Activity {
                     editor.putBoolean("checkboxBoolean",false);
                 }
                 editor.commit();
-                //Intent跳转
+                
                 Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                 intent.putExtra("name",user.getText().toString());
                 startActivity(intent);
